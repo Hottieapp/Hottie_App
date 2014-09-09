@@ -9,25 +9,23 @@
     tools:context=".GridContestCommonActivity"
     android:background="@drawable/back_orange" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView2"
-        android:text="Days Remaining: 21"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="17sp" />
+     <GridView
+         android:id="@+id/gridView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:columnWidth="100dp"
+         android:horizontalSpacing="10dp"
+         android:numColumns="auto_fit"
+         android:stretchMode="columnWidth"
+         android:verticalSpacing="10dp"
+         android:layout_below="@+id/textView1" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="69dp"
-        android:layout_marginTop="18dp"
-        android:text="GRID VIEW"
-        android:textSize="28sp" />
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:text="GRID VIEW"/>
 
 </RelativeLayout>

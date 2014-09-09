@@ -26,6 +26,10 @@
             android:name="com.example.hottieapp.GridContestCommonActivity"
             android:label="@string/title_activity_grid_contest_common" >
         </activity>
+        <activity
+            android:name="com.example.hottieapp.GridItemDisplayDetails"
+            android:label="@string/title_activity_grid_item_display_details" >
+        </activity>
     </application>
 
 </manifest>

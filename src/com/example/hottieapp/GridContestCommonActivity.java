@@ -1,5 +1,10 @@
 package com.example.hottieapp;
 
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
 
@@ -8,6 +13,13 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.CompressFormat;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -17,6 +29,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
 
 public class GridContestCommonActivity extends Activity implements AdapterView.OnItemClickListener {
     GridView grid;
@@ -30,7 +43,7 @@ public class GridContestCommonActivity extends Activity implements AdapterView.O
         grid.setAdapter(new VivzAdapter(this));
         grid.setOnItemClickListener(this);
         intent=new Intent(this, GridItemDisplayDetails.class);
-
+        
 
     }
 
@@ -47,8 +60,11 @@ public class GridContestCommonActivity extends Activity implements AdapterView.O
 
         startActivity(intent);
     }
-
+    
 }
+
+
+
 class SingleRow {
     String flagName;
     int image;
@@ -69,6 +85,8 @@ class VivzAdapter extends BaseAdapter
         Resources res=c.getResources();
         String[] flagTitles=res.getStringArray(R.array.flags);
         int images[]={R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.h,R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.h};
+        //int images[]={R.drawable.a,R.drawable.b,R.drawable.g};
+        
         for(int i=0;i<images.length;i++)
         {
             list.add(new SingleRow(flagTitles[i],images[i]));
@@ -115,8 +133,27 @@ class VivzAdapter extends BaseAdapter
             myHolder= (ViewHolder) row.getTag();
         }
         SingleRow temp=list.get(i);
+        //myHolder.myImageView.setImageResource(temp.image);
+        
+        //Drawable myDrawable = context.getResources().getDrawable(temp.image);
+       // Bitmap myLogo = ((BitmapDrawable) myDrawable).getBitmap();
+       // myLogo.setDensity(DisplayMetrics.DENSITY_LOW);
+
+        /*ByteArrayOutputStream oStream = new ByteArrayOutputStream();
+        myLogo.compress(CompressFormat.JPEG, 30, oStream);
+
+        Bitmap newBitmap = BitmapFactory.decodeByteArray(oStream.toByteArray(), 0, oStream.toByteArray().length);*/
+        
+        
+       // myHolder.myImageView.setImageBitmap(myLogo);
+        //myHolder.myImageView.setImageDrawable.(temp.image);
+
         myHolder.myImageView.setImageResource(temp.image);
         myHolder.myImageView.setTag(temp);
         return row;
     }
+
+	
+
+	
 }

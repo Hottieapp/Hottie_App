@@ -8,6 +8,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/blue_back"
     tools:context=".MainActivity" >
+ <ScrollView
+  	android:layout_width="wrap_content"
+  	android:layout_height="380dp">
+  	<RelativeLayout
+  	    android:id="@+id/rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         >
 
     <ImageButton
         android:id="@+id/girls"
@@ -15,7 +24,7 @@
         android:layout_height="150dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="74dp"
         android:contentDescription="@string/hello_world"
         android:src="@drawable/circle1" />
 
@@ -23,29 +32,9 @@
         android:id="@+id/fests"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_alignTop="@+id/girls"
-        android:layout_toLeftOf="@+id/girls"
-        android:contentDescription="@string/hello_world"
-        android:src="@drawable/circle1" />
-
-    <ImageButton
-        android:id="@+id/couples"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/boys"
+        android:layout_alignTop="@+id/girls"
         android:contentDescription="@string/hello_world"
-        android:src="@drawable/circle1" />
-    
-
-    <ImageButton
-        android:id="@+id/boys"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="50dp"
-        android:contentDescription="@string/hello_world"
-        android:layout_toRightOf="@+id/couples"
         android:src="@drawable/circle1" />
 
     <TextView
@@ -54,19 +43,38 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView2"
         android:layout_alignBottom="@+id/textView2"
-        android:layout_alignRight="@+id/fests"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/girls"
         android:text="BOY&apos;S\nCONTEST"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/couples"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/girls"
+        android:layout_marginTop="17dp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/circle1" />
+
+    <ImageButton
+        android:id="@+id/boys"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/couples"
+        android:layout_toRightOf="@+id/couples"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/circle1" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/boys"
-        android:layout_alignRight="@+id/boys"
-        android:layout_marginBottom="55dp"
-        android:layout_marginRight="29dp"
+        android:layout_alignLeft="@+id/boys"
+        android:layout_alignTop="@+id/boys"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="59dp"
         android:text="FESTS"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -76,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView3"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_alignRight="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
         android:text="COUPLES"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -85,18 +93,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/girls"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_marginBottom="53dp"
-        android:text="GIRL's\nCONTEST"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="50dp"
+        android:text="GIRL&apos;s\nCONTEST"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/fests"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="HOTTIE APP"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="28dp" />
+
+	</RelativeLayout>
+</ScrollView>
+
+ <Button
+     android:id="@+id/button1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_centerHorizontal="true"
+     android:text="REGISTER HERE" />
 
 </RelativeLayout>

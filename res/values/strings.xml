@@ -18,9 +18,20 @@
         <item>Spain</item>
         <item>Norway</item>
         <item>Italy</item>
+        <item>India</item>
+        <item>United States Of America</item>
+        <item>Philippines</item>
+        <item>Pakistan</item>
+        <item>Saudi Arabia</item>
+        <item>Turkey</item>
+        <item>Spain</item>
+        <item>Norway</item>
+        <item>Italy</item>
+        <item>Germany</item>
         <item>Germany</item>
     </string-array>
 
     <string name="title_activity_display_details">Guess What?</string>
+    <string name="title_activity_practice_activity">Practice_activity</string>
 
 </resources>

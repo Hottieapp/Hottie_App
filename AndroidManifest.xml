@@ -30,6 +30,10 @@
             android:name="com.example.hottieapp.GridItemDisplayDetails"
             android:label="@string/title_activity_grid_item_display_details" >
         </activity>
+        <activity
+            android:name="com.example.hottieapp.Practice_activity"
+            android:label="@string/title_activity_practice_activity" >
+        </activity>
     </application>
 
 </manifest>

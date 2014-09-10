@@ -33,38 +33,48 @@ public final class R {
         public static final int circle1=0x7f020006;
         public static final int g=0x7f020007;
         public static final int h=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
+        public static final int i=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int j=0x7f02000b;
+        public static final int k=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f090011;
-        public static final int boys=0x7f09000b;
-        public static final int button=0x7f090004;
-        public static final int button1=0x7f090010;
-        public static final int couples=0x7f09000a;
-        public static final int fests=0x7f090008;
-        public static final int gallery=0x7f09000f;
-        public static final int girls=0x7f090007;
+        public static final int Register_id_button=0x7f090010;
+        public static final int action_settings=0x7f090015;
+        public static final int boys=0x7f09000c;
+        public static final int button=0x7f090007;
+        public static final int couples=0x7f09000b;
+        public static final int deviceID_button=0x7f090011;
+        public static final int device_id_text=0x7f090014;
+        public static final int fests=0x7f090009;
+        public static final int girls=0x7f090008;
         public static final int gridView=0x7f090000;
-        public static final int imageView=0x7f090002;
-        public static final int ratingBar1=0x7f090005;
-        public static final int rel=0x7f090006;
-        public static final int textView=0x7f090003;
+        public static final int imageView=0x7f090004;
+        public static final int photo_upload=0x7f090013;
+        public static final int pic_text=0x7f090012;
+        public static final int ratingBar1=0x7f090006;
+        public static final int rel=0x7f090003;
+        public static final int scrollView1=0x7f090002;
+        public static final int textView=0x7f090005;
         public static final int textView1=0x7f090001;
-        public static final int textView2=0x7f090009;
-        public static final int textView3=0x7f09000c;
-        public static final int textView4=0x7f09000d;
-        public static final int textView5=0x7f09000e;
+        public static final int textView2=0x7f09000a;
+        public static final int textView3=0x7f09000d;
+        public static final int textView4=0x7f09000e;
+        public static final int textView5=0x7f09000f;
     }
     public static final class layout {
         public static final int activity_grid_contest_common=0x7f030000;
         public static final int activity_grid_item_display_details=0x7f030001;
         public static final int activity_main=0x7f030002;
-        public static final int single_item=0x7f030003;
+        public static final int activity_practice_activity=0x7f030003;
+        public static final int large_display_test=0x7f030004;
+        public static final int single_item=0x7f030005;
     }
     public static final class menu {
         public static final int grid_contest_common=0x7f080000;
         public static final int grid_item_display_details=0x7f080001;
         public static final int main=0x7f080002;
+        public static final int practice_activity=0x7f080003;
     }
     public static final class string {
         public static final int OK=0x7f050005;
@@ -74,6 +84,7 @@ public final class R {
         public static final int title_activity_display_details=0x7f050006;
         public static final int title_activity_grid_contest_common=0x7f050003;
         public static final int title_activity_grid_item_display_details=0x7f050004;
+        public static final int title_activity_practice_activity=0x7f050007;
     }
     public static final class style {
         /** 

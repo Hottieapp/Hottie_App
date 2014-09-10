@@ -109,20 +109,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="28dp" />
 
-    <Button
-        android:id="@+id/gallery"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Upload" />
-
 	</RelativeLayout>
 </ScrollView>
 
  <Button
-     android:id="@+id/button1"
+     android:id="@+id/Register_id_button"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:layout_alignParentBottom="true"

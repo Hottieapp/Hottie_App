@@ -84,9 +84,9 @@ class VivzAdapter extends BaseAdapter
         list=new ArrayList<SingleRow>();
         Resources res=c.getResources();
         String[] flagTitles=res.getStringArray(R.array.flags);
-        int images[]={R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.h,R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.h};
+        //int images[]={R.drawable.a,R.drawable.b,R.drawable.i,R.drawable.c,R.drawable.h,R.drawable.a,R.drawable.b,R.drawable.i,R.drawable.c,R.drawable.h,R.drawable.i};
         //int images[]={R.drawable.a,R.drawable.b,R.drawable.g};
-        
+        int images[]={R.drawable.i,R.drawable.i,R.drawable.i,R.drawable.i,R.drawable.i,R.drawable.i,R.drawable.i,R.drawable.i,R.drawable.i,R.drawable.i,R.drawable.i,R.drawable.i};
         for(int i=0;i<images.length;i++)
         {
             list.add(new SingleRow(flagTitles[i],images[i]));

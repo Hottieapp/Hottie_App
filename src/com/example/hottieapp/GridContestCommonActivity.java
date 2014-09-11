@@ -29,6 +29,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 
 public class GridContestCommonActivity extends Activity implements AdapterView.OnItemClickListener {
@@ -111,9 +112,11 @@ class VivzAdapter extends BaseAdapter
     class ViewHolder
     {
         ImageView myImageView;
+        TextView contestant_name;
         ViewHolder(View view)
         {
             myImageView= (ImageView) view.findViewById(R.id.imageView);
+            contestant_name= (TextView) view.findViewById(R.id.contestant_in_id);
         }
     }
     @Override
@@ -149,6 +152,9 @@ class VivzAdapter extends BaseAdapter
         //myHolder.myImageView.setImageDrawable.(temp.image);
 
         myHolder.myImageView.setImageResource(temp.image);
+        myHolder.contestant_name.setTextSize(15);
+        //myHolder.contestant_name.setTextColor();
+        myHolder.contestant_name.setText(temp.flagName);
         myHolder.myImageView.setTag(temp);
         return row;
     }

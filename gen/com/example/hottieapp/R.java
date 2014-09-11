@@ -40,9 +40,10 @@ public final class R {
     }
     public static final class id {
         public static final int Register_id_button=0x7f090010;
-        public static final int action_settings=0x7f090015;
+        public static final int action_settings=0x7f090016;
         public static final int boys=0x7f09000c;
         public static final int button=0x7f090007;
+        public static final int contestant_in_id=0x7f090015;
         public static final int couples=0x7f09000b;
         public static final int deviceID_button=0x7f090011;
         public static final int device_id_text=0x7f090014;

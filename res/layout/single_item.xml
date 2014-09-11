@@ -14,4 +14,14 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"/>
 
+	    <TextView
+	        android:id="@+id/contestant_in_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView"
+	        android:layout_below="@+id/imageView"
+	        android:layout_marginLeft="34dp"
+	        android:text="Text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
 </RelativeLayout>

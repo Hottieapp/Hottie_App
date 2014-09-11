@@ -67,7 +67,6 @@ public class MainActivity extends Activity {
 		Button registerButton = (Button) findViewById(R.id.Register_id_button);
 		registerButton.setOnClickListener(new View.OnClickListener() 
 		{
-			
 			public void onClick(View v) 
 			{
 				Intent intent = new Intent(MainActivity.this,Practice_activity.class);

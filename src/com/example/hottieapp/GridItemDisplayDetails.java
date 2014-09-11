@@ -26,8 +26,6 @@ public class GridItemDisplayDetails extends Activity {
         image=(ImageView)findViewById(R.id.imageView);
         text= (TextView) findViewById(R.id.textView);
         
-       
-        
         if(flag!=null)
         {
             text.setText(flag);

@@ -2,12 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/blue_back"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/blue_back"
-    tools:context=".Practice_activity" >
+    tools:context=".Practice_activity" xmlns:android1="http://schemas.android.com/apk/res/android">
 
     <Button
         android:id="@+id/deviceID_button"
@@ -25,16 +25,19 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="58dp"
-        android:text="@string/hello_world" />
+        android1:textColor="@color/BlueViolet"
+	    android:textStyle="bold|italic"  
+        android:text="Pic Path:" />
 
     <Button
         android:id="@+id/photo_upload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pic_text"
+        android1:background="@drawable/pic_camera"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Photo Upload" />
+        />
 
     <TextView
         android:id="@+id/device_id_text"
@@ -43,7 +46,31 @@
         android:layout_above="@+id/deviceID_button"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="53dp"
-        android:text="Medium Text"
+	    android:textColor="@color/BlueViolet"
+	    android:textStyle="bold|italic"
+	    android:textSize="17sp"
+        android:text="Device ID:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="TESTING ACTIVITY"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo_upload"
+        android:layout_centerHorizontal="true"
+	    android:textColor="@color/LightGrey"
+	    android:textStyle="bold|italic"
+	    android:textSize="19sp"
+        android1:text="UPLOAD YOUR DP" />
 
 </RelativeLayout>

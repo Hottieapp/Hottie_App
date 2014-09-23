@@ -182,16 +182,11 @@ public final class R {
         public static final int food_ratingbar_full=0x7f02000d;
         public static final int food_ratingbar_full_empty=0x7f02000e;
         public static final int food_ratingbar_full_filled=0x7f02000f;
-        public static final int g=0x7f020010;
-        public static final int goth=0x7f020011;
-        public static final int h=0x7f020012;
-        public static final int i=0x7f020013;
-        public static final int ic_launcher=0x7f020014;
-        public static final int j=0x7f020015;
-        public static final int k=0x7f020016;
-        public static final int mohit=0x7f020017;
-        public static final int pic_camera=0x7f020018;
-        public static final int sabrina=0x7f020019;
+        public static final int goth=0x7f020010;
+        public static final int ic_launcher=0x7f020011;
+        public static final int mohit=0x7f020012;
+        public static final int pic_camera=0x7f020013;
+        public static final int sabrina=0x7f020014;
     }
     public static final class id {
         public static final int Register_id_button=0x7f0a0011;

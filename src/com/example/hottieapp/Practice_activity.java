@@ -3,9 +3,11 @@ package com.example.hottieapp;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.provider.MediaStore;
 import android.provider.Settings.Secure;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.view.Menu;
@@ -30,6 +32,7 @@ public class Practice_activity extends Activity {
 			
 			public void onClick(View v) 
 			{
+				vibration(30);
 				Intent intent = new Intent();
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
@@ -43,6 +46,7 @@ public class Practice_activity extends Activity {
 			
 			public void onClick(View v) 
 			{
+				vibration(30);
 				TextView text= (TextView) findViewById(R.id.device_id_text);
                 text.setTextSize(18);
                 text.setText(android_id);
@@ -50,7 +54,11 @@ public class Practice_activity extends Activity {
 		});
 	
 }
-
+	void vibration(int time)
+	{
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+    	v.vibrate(time);
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) { 
 		// Inflate the menu; this adds items to the action bar if it is present.

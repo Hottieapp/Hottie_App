@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -50,6 +51,8 @@ public class GridContestCommonActivity extends Activity implements AdapterView.O
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+    	Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+		v.vibrate(30);
         RelativeLayout layout=(RelativeLayout)view;
         ImageView image= (ImageView) layout.findViewById(R.id.imageView);
         SingleRow row= (SingleRow) image.getTag();

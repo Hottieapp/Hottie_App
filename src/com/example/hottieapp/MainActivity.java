@@ -3,8 +3,10 @@ package com.example.hottieapp;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.provider.MediaStore;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.view.Menu;
@@ -14,6 +16,12 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
+	void vibration(int time)
+	{
+
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+    	v.vibrate(time);
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +34,7 @@ public class MainActivity extends Activity {
 			
 			public void onClick(View v) 
 			{
+				vibration(30);
 				Intent intent = new Intent(MainActivity.this,GridContestCommonActivity.class);
 				startActivity(intent);	
 			}
@@ -37,6 +46,7 @@ public class MainActivity extends Activity {
 			
 			public void onClick(View v) 
 			{
+				vibration(30);
 				Intent intent = new Intent(MainActivity.this,GridContestCommonActivity.class);
 				startActivity(intent);	
 			}
@@ -48,6 +58,7 @@ public class MainActivity extends Activity {
 			
 			public void onClick(View v) 
 			{
+				vibration(30);
 				Intent intent = new Intent(MainActivity.this,GridContestCommonActivity.class);
 				startActivity(intent);	
 			}
@@ -59,6 +70,7 @@ public class MainActivity extends Activity {
 			
 			public void onClick(View v) 
 			{
+				vibration(30);
 				Intent intent = new Intent(MainActivity.this,GridContestCommonActivity.class);
 				startActivity(intent);	
 			}
@@ -69,6 +81,7 @@ public class MainActivity extends Activity {
 		{
 			public void onClick(View v) 
 			{
+				vibration(30);
 				Intent intent = new Intent(MainActivity.this,Practice_activity.class);
 				startActivity(intent);	
 			}

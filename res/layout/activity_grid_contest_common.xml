@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".GridContestCommonActivity"
-    android:background="@drawable/back_orange" >
+    android:background="@drawable/goth" >
 
      <GridView
          android:id="@+id/gridView"
@@ -26,6 +26,18 @@
          android:layout_height="wrap_content"
          android:layout_alignParentTop="true"
          android:layout_centerHorizontal="true"
-         android:text="GRID VIEW"/>
+	     android:textColor="@color/LightGrey"
+	     android:textStyle="bold|italic"
+	     android:textSize="19sp"
+         android:text="HOT WAR"/>
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/textView1"
+         android:layout_alignRight="@+id/gridView"
+         android:textColor="@color/LightBlue"
+         android:text="Days Left:21" />
 
 </RelativeLayout>

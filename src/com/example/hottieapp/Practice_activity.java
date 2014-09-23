@@ -48,7 +48,8 @@ public class Practice_activity extends Activity {
                 text.setText(android_id);
 			}
 		});
-	}
+	
+}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) { 

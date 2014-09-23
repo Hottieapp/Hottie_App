@@ -24,6 +24,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
                 android:src="@drawable/a" />
 
             <TextView
@@ -39,16 +40,6 @@
         </RelativeLayout>
     </ScrollView>
 
-    <RatingBar
-        android:id="@+id/ratingBar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/scrollView1"
-        android:layout_centerHorizontal="true"
-        android:numStars="5"
-        android:rating="2.0"
-        android:stepSize="1.0" />
-
      <Button
          android:id="@+id/button"
          android:layout_width="wrap_content"
@@ -56,6 +47,26 @@
          android:layout_below="@+id/ratingBar1"
          android:layout_centerHorizontal="true"
          android:onClick="wrapUp"
-         android:text="@string/OK" />
+         android:background="@drawable/checkmark_selector"
+          />
+
+     <RatingBar
+         android:id="@+id/ratingBar1"
+         style="@style/foodRatingBar"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/scrollView1"
+         android:layout_centerHorizontal="true" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button"
+         android:layout_centerHorizontal="true"
+	     android:textStyle="bold|italic"
+	     android:textSize="15sp"
+         android:textColor="@color/LightBlue"
+         android:text="HEARTS" />
 
 </RelativeLayout>

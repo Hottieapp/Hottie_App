@@ -7,6 +7,7 @@ import android.os.Vibrator;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -29,6 +30,9 @@ public class GridItemDisplayDetails extends Activity {
         String flag=getIntent().getStringExtra("selectedFlagName");
         image=(ImageView)findViewById(R.id.imageView);
         text= (TextView) findViewById(R.id.textView);
+        text.setTextSize(30);
+		Typeface fontobject=Typeface.createFromAsset(getAssets(),"oneway.ttf");
+        text.setTypeface(fontobject);
         
         Button registerButton = (Button) findViewById(R.id.button);
 		registerButton.setOnClickListener(new View.OnClickListener() 

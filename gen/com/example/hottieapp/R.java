@@ -190,21 +190,23 @@ public final class R {
     }
     public static final class id {
         public static final int Register_id_button=0x7f0a0011;
-        public static final int action_settings=0x7f0a0017;
+        public static final int action_settings=0x7f0a0019;
         public static final int boys=0x7f0a000c;
         public static final int button=0x7f0a0007;
-        public static final int contestant_in_id=0x7f0a0016;
+        public static final int contestant_in_id=0x7f0a0018;
         public static final int couples=0x7f0a000b;
-        public static final int deviceID_button=0x7f0a0012;
-        public static final int device_id_text=0x7f0a0015;
+        public static final int deviceID_button=0x7f0a0014;
+        public static final int device_id_text=0x7f0a0017;
         public static final int fests=0x7f0a000a;
         public static final int girls=0x7f0a0009;
         public static final int gridView=0x7f0a0000;
         public static final int imageView=0x7f0a0005;
-        public static final int photo_upload=0x7f0a0014;
-        public static final int pic_text=0x7f0a0013;
+        public static final int photo_upload=0x7f0a0016;
+        public static final int pic_text=0x7f0a0015;
         public static final int ratingBar1=0x7f0a0008;
         public static final int rel=0x7f0a0004;
+        public static final int relativeLayout1=0x7f0a0012;
+        public static final int relativeLayout2=0x7f0a0013;
         public static final int scrollView1=0x7f0a0003;
         public static final int textView=0x7f0a0006;
         public static final int textView1=0x7f0a0001;

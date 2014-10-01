@@ -112,8 +112,9 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:text="HOTTIE APP"
+                android:textColor="@color/FireBrick"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="28dp" />
+                />
         </RelativeLayout>
     </ScrollView>
 

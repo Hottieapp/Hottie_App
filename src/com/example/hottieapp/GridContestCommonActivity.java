@@ -18,6 +18,7 @@ import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
+import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.DisplayMetrics;
@@ -36,6 +37,7 @@ import android.widget.TextView;
 public class GridContestCommonActivity extends Activity implements AdapterView.OnItemClickListener {
     GridView grid;
     Intent intent=null;
+    TextView customfont;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +48,11 @@ public class GridContestCommonActivity extends Activity implements AdapterView.O
         grid.setOnItemClickListener(this);
         intent=new Intent(this, GridItemDisplayDetails.class);
         
-
+        customfont=(TextView) findViewById(R.id.textView1);
+        Typeface fontobject=Typeface.createFromAsset(getAssets(),"horrendo.ttf");
+        customfont.setTypeface(fontobject);
+        customfont.setText("HOT WAR");
+        customfont.setTextSize(27);
     }
 
     @Override
@@ -153,6 +159,7 @@ class VivzAdapter extends BaseAdapter
         
        // myHolder.myImageView.setImageBitmap(myLogo);
         //myHolder.myImageView.setImageDrawable.(temp.image);
+        
 
         myHolder.myImageView.setImageResource(temp.image);
         myHolder.contestant_name.setTextSize(15);
@@ -162,7 +169,4 @@ class VivzAdapter extends BaseAdapter
         return row;
     }
 
-	
-
-	
 }

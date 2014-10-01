@@ -38,6 +38,7 @@
          android:layout_alignBottom="@+id/textView1"
          android:layout_alignRight="@+id/gridView"
          android:textColor="@color/LightBlue"
-         android:text="Days Left:21" />
+         android:text="Days Left:21"
+         android:textSize="12sp" />
 
 </RelativeLayout>
